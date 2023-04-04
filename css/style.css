@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Mitr:wght@200;300;400;500;600;700&family=Paprika&family=Roboto:wght@100;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box; }
+
+body {
+  background-color: #24212b; }
+  body div header {
+    padding-top: 10px;
+    color: #8b8b8b;
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center; }
+    body div header .victories {
+      width: fit-content;
+      background: transparent;
+      color: #8b8b8b;
+      border: none;
+    }
+    body div header .victories:hover {
+      color: #ffe94b;
+    }
+  body div main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    body div main .instructions {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      padding: 12px;
+      height: 100vh;
+      color: #24212b;
+      background-color: #f5f5dc;
+    }
+    body div main .instructions div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      width: 80%;
+    }
+    body div main .instructions div form fieldset {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }  
+    body div main .instructions div form fieldset label {
+      font-weight: bolder;
+    }
+    body div main .instructions div form fieldset button {
+      margin-top: 20px;
+      padding: 2px;
+      background-color: transparent;
+      border: none;
+      color: #24212b;
+    }
+    body div main .instructions div form fieldset button:hover {
+      font-weight: bolder;
+    }
+    body div main .instructions div form fieldset input {
+      text-align: center;
+      color: #855f40;
+      font-weight: bolder;
+      border: transparent;
+      background-color: transparent;
+      border-bottom: 2px solid #24212b;
+      outline: none;
+    }
+    body div main .setGame {
+      color: #8b8b8b;
+    }
+    body div main .setGame form fieldset label {
+      display: block;
+      text-align: center;
+    }
+    body div main .setGame form fieldset {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      margin: 0 auto;
+    }
+    body div main .setGame form fieldset select {
+      border: none;
+      background-color: transparent;
+      color: #8b8b8b;
+      text-align: center;
+    }
+    body div main .setGame form fieldset select option{
+      border: none;
+      background-color: #24212b;
+      color: #8b8b8b;
+    }
+    body div main .setGame form fieldset .settings {
+      display: flex;
+      margin: 8px;
+    }
+    body div main .setGame form fieldset .buttons button {
+      padding: 2px;
+      background-color: transparent;
+      border: none;
+      color: #f7c184;
+    }
+    body div main .setGame form fieldset .buttons {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+    }
+    body div main .setGame form fieldset .form-text {
+      font-size: .8rem;
+      text-align: center;
+    }
+    body div main .game-area {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      color: #f7c184;
+      width: 90%;
+      max-width: 398px;
+      min-height: 106px;
+      margin: 16px 0 16px 0;
+      backdrop-filter: blur(4px);
+      perspective: 200px; }
+      body div main .game-area .cardGame {
+        width: 72px;
+        height: 72px;
+        position: relative;
+        margin: 6px;
+        transform-style: preserve-3d;
+        box-shadow: #000000cc 0px 5px 15px;
+        border: none;
+        border-radius: 110px;
+        transition: .3s;
+        cursor: pointer; }
+        body div main .game-area .cardGame .pokeballImg {
+          width: 72px;
+          height: 72px;
+          content:url(../pokeball.png);
+        }
+      body div main .game-area .frontCard, body div main .game-area .backCard {
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+      }
+      body div main .game-area .frontCard {
+        height: 100px;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+      }
+      body div main .game-area .backCard {
+        height: 100px;
+        width: 100%;
+        height: 100%;
+        padding: 6px;
+        transform: rotateY(-180deg);
+        border-radius: 110px;
+        transition: .3s; 
+      }
+        body div main .game-area .backCard .pokeImg {
+          height: 80%;
+          width: 80%; 
+        }
+    body div main .score {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    body div main .score .statistics {
+      display: flex;
+      flex-direction: column;
+      color: #8b8b8b;
+      font-size: 1rem;
+    }
+    body div main .btnGame {
+      font-weight: bolder;
+      border: none;
+      width: 72px;
+      height: 72px;
+      font-size: 1.3rem;
+      margin: 4px; 
+    }
+    body div footer p {
+      font-size: .6rem;
+      margin: 0;
+      padding-top: 10px;
+      color: #8b8b8b;
+    }
+
+.trofeos {
+  color: #8b8b8b;
+  
+}
+.trofeos span {
+  color: #f7c184;
+}
+.scoreTitle {
+  color: #8b8b8b;
+  font-weight: bolder;
+}
+.dificulty p span {
+  color: #f7c184;
+}
+.dificulty {
+  display: flex;
+  justify-content: space-evenly;
+}
+.swal2-image {
+  margin: 0 !important;
+}
+.rotate {
+  transform: rotateY(-180deg); }
+
+@media screen and (min-width: 576px) and (max-width:991px) {
+    body div header .h1 {
+      font-size: 2.5rem;
+    }
+      body div header .victories {
+        font-size: 20px;
+      }
+    body div main {
+      flex-direction: column;
+    }
+      body div main .instructions h2 {
+        font-size: 3rem;
+      }
+      body div main .instructions div {
+        font-size: 1.2rem;
+        width: 80%;
+      }
+      body div main .instructions div h3 {
+        font-size: 2.5rem;
+      }
+      body div main .setGame {
+        font-size: 1.2rem;
+      }
+      body div main .setGame form fieldset {
+        max-width: 628px;
+        width: 100%;
+      }
+      body div main .game-area .btnGame {
+        font-weight: bolder;
+        border: none;
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+        margin: 4px; 
+      }
+        body div main .game-area .cardGame {
+          width: 80px;
+          height: 80px;
+          }
+          body div main .game-area .cardGame .pokeballImg {
+            width: 80px;
+            height: 80px;
+          }
+      body div main .score {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      body div main .score .statistics {
+        font-size: 1.2rem }
+      body div footer p {
+        font-size: .8rem;  
+      }  
+}
+  
+@media screen and (min-width:992px) {
+  body div header .h1 {
+    font-size: 2.5rem;
+  }
+    body div header .victories {
+      font-size: 20px;
+    }
+  body div main {
+    flex-direction: column;
+  }
+    body div main .instructions h2 {
+      font-size: 2.5rem;
+    }
+    body div main .instructions div {
+      font-size: 1.5rem;
+      width: 80%;
+    }
+    body div main .instructions div h3 {
+      font-size: 2.2rem;
+    }
+    body div main .setGame {
+      font-size: 1.5rem;
+    }
+    body div main .setGame form fieldset {
+      max-width: 628px;
+      width: 100%;
+    }
+    body div main .game-area {
+      max-width: 508px;
+    }
+    body div main .game-area .btnGame {
+      font-weight: bolder;
+      border: none;
+      width: 90px;
+      height: 90px;
+      font-size: 1.5rem;
+      margin: 4px; 
+    }
+      body div main .game-area .cardGame {
+        width: 90px;
+        height: 90px;
+        margin: 8px;
+      }
+        body div main .game-area .cardGame .pokeballImg {
+          width: 90px;
+          height: 90px;
+        }
+    body div main .score {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    body div main .score .statistics {
+      font-size: 1.2rem 
+    }
+    body div footer p {
+      font-size: 1rem;  
+    }  
+}
+
+
+
